@@ -18,4 +18,4 @@ const numberGenerator = (num) => {
     return Math.floor(Math.random() * num);
 }
 
-console.log(generateName('Leo'));
+console.log(generateName('Ciona'));
