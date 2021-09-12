@@ -2,12 +2,13 @@ const titles = [ 'Prince', 'Princess', 'King', 'Queen', 'Duke', 'Duchess', 'Marq
 const kingdoms = [ 'Narnia', 'Aerendel', 'the Fairy County', 'the Southern Isles', 'Northern Hemisphere', 'Outer Space'];
 const adjectives = [ 'Adaptable', 'Affectionate', 'Compassionate', 'Zealous', 'Strong'];
 
-const generateName = name => {    
+
+const generateName = ( ) => {    
     const title = getRandomValue(titles);
     const kingdom = getRandomValue(kingdoms);
     const adjective = getRandomValue(adjectives);
-    console.log("Your Royal Name is: ");
-    console.log(`${adjective} ${title} ${name} of ${kingdom}`);
+    console.log("Your Royal Title is: ");
+    console.log(`${adjective} ${title} of ${kingdom}`);
 };
 
 const getRandomValue = arr => {
@@ -18,4 +19,4 @@ const numberGenerator = (num) => {
     return Math.floor(Math.random() * num);
 }
 
-console.log(generateName('Ciona'));
+console.log(generateName());
